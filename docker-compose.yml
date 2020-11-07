@@ -10,15 +10,16 @@ services:
   graphql-engine:
     build:
       context: .
-      dockerfile: Hasura
+      dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "80:80"
     depends_on:
       - "postgres"
     restart: always
     environment:
       HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres
       HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
+      PORT: 80
       ## uncomment next line to set an admin secret
       # HASURA_GRAPHQL_ADMIN_SECRET: myadminsecretkey
 volumes:
