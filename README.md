@@ -1,3 +1,11 @@
+# localでdockerを使って試す場合
+```
+[起動]
+docker-compose up -d
+[コンソールにアクセス]
+http://localhost
+```
+
 # herokuにupするコマンド
 ```
 heroku login
