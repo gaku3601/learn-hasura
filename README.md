@@ -14,3 +14,6 @@ heroku container:login
 heroku container:push web -a [heroku上のアプリ名]
 heroku container:release web -a [heroku上のアプリ名]
 ```
+
+# PlayGround
+https://github.com/gaku3601/learn-hasura/wiki
